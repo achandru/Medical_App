@@ -1,0 +1,108 @@
+      .form-group {
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-bottom: 1px dashed;
+        border-bottom-color: #c6c5c5;
+        background-color: #f8f8f8;
+        margin-top: 20px;
+        padding-left: none;
+        width: 280px;
+      }
+
+      .forgot {
+        color: #c5c5c4;
+        margin-top: 40px;
+        line-height: 50px;
+        text-decoration: underline;
+        padding-left: 2px;
+      }
+
+      .create {
+        color: #f36769;
+        margin-left: 80px;
+        line-height: 75px;
+        font-size: 15px;
+        text-decoration: underline;
+      }
+
+      .form-head {
+        background-color: #f8f8f8;
+        margin-top: 80px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+      }
+
+      .sign {
+        border: 1px dashed #f35e60;
+        height: 57px;
+        width: 348px;
+        color: white;
+        background-color: #f35e60;
+        font-weight: 600 !important;
+        border-radius: 5px;
+        font-size: 18px;
+        margin-top: 300px;
+        margin-left: 0px;
+
+      }
+
+      .sign-in {
+        text-align: left;
+        color: #f35e60;
+        height: 38px;
+        background-color: white;
+        position: relative;
+      }
+
+      .cancel {
+        text-align: right;
+        position: relative;
+        color: #c8ccd0;
+        height: 38px;
+        background-color: #c8ccd0;
+      }
+
+      .sig {
+        float: left;
+        position: absolute;
+        bottom: 0;
+        font-weight: 600;
+        color: #f35e60;
+      }
+
+      .canc {
+        float: right;
+        margin-top: 14px;
+        margin-right: 3px;
+        font-size: 15px;
+        color: white;
+        font-weight: 550 !important;
+      }
+
+      .cancel::after {
+        background: #c8ccd0 none repeat scroll 0 0;
+        content: "";
+        width: 50px;
+        height: 38px;
+        transform: skew(18deg);
+        left: -10px;
+        position: absolute;
+        border-radius: 3px;
+      }
+
+      .cancel {
+        text-align: right;
+        position: relative;
+        color: #c8ccd0;
+        height: 38px;
+        background-color: #c8ccd0;
+      }
+
+      .about-us-login {
+        position: fixed;
+        width: 100%;
+        border-top: 44px solid #c8ccd0;
+        border-bottom: 8px solid #ffffff;
+      }

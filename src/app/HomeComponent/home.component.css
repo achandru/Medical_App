@@ -1,0 +1,760 @@
+              /* Home Page 1*/
+
+              .front-page {
+                text-align: center;
+                margin-top: -30px;
+                background-color:#f8f8f8;
+              }
+
+              .pageone {
+                position: fixed;
+                width: 100%;
+                border-bottom: 8px solid #ffffff;
+                border-top: 40px solid #c8ccd0;
+              }
+
+              .log {
+                float: left;
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 5px;
+                font-weight: 600;
+                color: white;
+              }
+
+              .login {
+                text-align: left;
+                color: white;
+                height: 38px;
+                background-color: #c8ccd0;
+                position: relative;
+              }
+
+              .home {
+                text-align: right;
+                position: relative;
+                color: #c8ccd0;
+                height: 38px;
+                background-color: white;
+              }
+
+              .hom {
+                float: right;
+                margin-top:15px;
+                padding-right: 12px;
+                font-size:16px;
+                color: #a0a0a0;
+                font-weight: 600 !important;
+              }
+
+              .home::before {
+                background: #c8ccd0 none repeat scroll 0 0;
+                content: "";
+                width: 38px;
+                height: 38px;
+                transform: skew(-22deg);
+                left: -10px;
+                position: absolute;
+                border-radius: 2px;
+              }
+
+              .welcome>p {
+                color: #f35e60;
+                font-weight: 550 !important;
+                font-size: 1.4em;
+                border-top: 0px solid white;
+              }
+
+              .para {
+                color: #a0a0a0;
+                font-weight: 500 !important;
+                font-size: 1.1em;
+              }
+
+              .book {
+                border: 1px dashed #f35e60;
+                height: 55px;
+                width: 322px;
+                color: white;
+                background-color: #f35e60;
+                font-weight: 600 !important;
+                margin-bottom: 15px;
+                margin-left: 5px;
+                border-radius: 5px;
+                font-size: 18px;
+              }
+
+              .account {
+                border: 1.8px dashed lightgray;
+                height: 55px;
+                width: 322px;
+                color: #f35e60;
+                background-color: #f8f8f8;
+                font-weight: 600 !important;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                font-size: 18px;
+              }
+
+              .listof {
+                text-align: left;
+                margin-top: 16px;
+                margin-bottom: 16px;
+                margin-left: 4px;
+              }
+
+              .listof>ul {
+                list-style-type: none;
+              }
+
+              .listof>ul>li>a {
+                color: #818181;
+                font-weight: 600 !important;
+                line-height: 35px;
+                margin-top: 30px;
+              }
+
+              .background {
+                background-image: url("/assets/snaps.png");
+                height: 374px;
+                width: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-top: 30px;
+                background-position: center;
+                border-top: 82px solid white;
+              }
+
+              .arrow {
+                color: #f46d70;
+                line-height: 20px;
+                cursor: pointer;
+                padding-right: 5px;
+                margin: 0px;
+                font-size: 15px;
+              }
+
+              /*-----------------------------------------------------------------------------*/
+
+              /* About us Page 2*/
+
+              .about-us {
+                color: #929292;
+                line-height: 24px;
+                font-size: 1.2em;
+                background-color: #f8f8f8;
+
+              }
+              .paragraph:hover{
+                overflow-y: scroll;
+              }
+
+              .paragraph::-webkit-scrollbar{
+                width: 4px;
+              }
+              .paragraph::-webkit-scrollbar-track{
+                box-shadow: inset 0 0 2px white;
+              }
+              .paragraph::-webkit-scrollbar-thumb{
+                background-color: gray;
+                border-radius: 10px;
+              }
+              .paragraph::-webkit-scrollbar-thumb:hover{
+                background-color: #d8dbdd;
+                transition: all 3s !important;
+              }
+              .pagetwo {
+                  position: fixed;
+                  width: 100%;
+                  border-bottom: 8px solid #ffffff;
+                  border-top: 40px solid #c8ccd0;
+              }
+
+              .bac {
+                float: left;
+                position: absolute;
+                bottom: 0;
+                font-weight: 600;
+                color: white;
+                margin-left: 6px;
+              }
+
+              .paragraph {
+                padding: 8px 37px;
+                border-top: 60px solid white;
+                height: 700px;
+                overflow-x: hidden;
+                padding-bottom: 300px;
+              }
+
+              .paragraph>p {
+                margin: 10px 0px 10px;
+              }
+
+              .mission {
+                font-weight: 600 !important;
+                margin-bottom: 20px;
+                margin-top: 40px;
+                color: #929292;
+              }
+
+              .vision {
+                margin-top: 56px;
+                font-weight: 600 !important;
+                margin-bottom: 18px;
+                color: #929292;
+              }
+
+              .back {
+                text-align: left;
+                color: white;
+                height: 38px;
+                background-color: #c8ccd0;
+                position: relative;
+              }
+
+              .about {
+                text-align: right;
+                position: relative;
+                color: #c8ccd0;
+                height: 38px;
+                background-color: white;
+              }
+
+              .abou {
+                float: right;
+                margin-top: 15px;
+                color: #f36769;
+                font-weight: 600 !important;
+              }
+
+              .about::before {
+                background: #c8ccd0 none repeat scroll 0 0;
+                content: "";
+                width: 50px;
+                height: 38px;
+                transform: skew(-18deg);
+                left: -10px;
+                position: absolute;
+                border-radius: 2px;
+              }
+              .arr-left{
+                font-size: 13px;
+              }
+              /*-----------------------------------------------------------------------------*/
+
+              /* Conditions traeted Page 3 */
+
+              .conditions {
+                color: #929292;
+                line-height: 24px;
+                font-size: 1.2em;
+                background-color: #f8f8f8;
+
+              }
+              .whatwetreat:hover{
+                overflow-y: scroll;
+              }
+
+              .whatwetreat::-webkit-scrollbar{
+                width: 4px;
+              }
+              .whatwetreat::-webkit-scrollbar-track{
+                box-shadow: inset 0 0 2px white;
+              }
+              .whatwetreat::-webkit-scrollbar-thumb{
+                background-color: gray;
+                border-radius: 10px;
+              }
+              .whatwetreat::-webkit-scrollbar-thumb:hover{
+                background-color: #d8dbdd;
+                transition: all 3s !important;
+              }
+
+              .conditionhead>th {
+                border: none;
+                padding: 14px;
+                font-size: 20px;
+              }
+
+              .pagethree {
+                position: fixed;
+                width: 100%;
+                border-bottom: 8px solid #ffffff;
+                border-top: 40px solid #c8ccd0;
+              }
+
+              .conditionstr {
+                float: right;
+                margin-top: 12px;
+                color: #f36769;
+                font-weight: 600 !important;
+              }
+
+              .conditionst::before {
+                background: #c8ccd0 none repeat scroll 0 0;
+                content: "";
+                width: 50px;
+                height: 38px;
+                transform: skew(-18deg);
+                left: -10px;
+                position: absolute;
+                border-radius: 2px;
+              }
+
+              .backcont {
+                text-align: left;
+                color: white;
+                height: 38px;
+                background-color: #c8ccd0;
+                position: relative;
+              }
+
+              .conditionst {
+                text-align: right;
+                position: relative;
+                color: #c8ccd0;
+                height: 38px;
+                background-color: white;
+              }
+
+              .bakcont {
+                float: left;
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 5px;
+                font-weight: 600;
+                color: white;
+              }
+
+              .table>thead>tr>th {
+                border: none;
+                padding: 15px;
+                font-size: 20px;
+              }
+
+              .table-cont {
+                width: 95%;
+                margin-bottom: 300px;
+              }
+
+              .table>tbody>tr>td {
+                border-top: 1px dashed #dddddd;
+                padding: 15px;
+              }
+
+              .paraone {
+                margin-bottom: 40px;
+                margin-left: 10px;
+                margin-right: 54px;
+                margin-top: -28px;
+              }
+
+              .row {
+                padding: 20px;
+              }
+
+              .contionhead {
+                padding: 16px;
+              }
+
+              .dashed {
+                color: #f35e60;
+                font-size: 8px;
+                padding: 15px;
+                padding-top: 20px !important;
+              }
+
+              .treat {
+                margin-top: 68px;
+                margin-bottom: 22px;
+                font-size: 22px;
+                font-weight: 600 !important;
+              }
+
+              .whatwetreat {
+                padding: 8px 18px;
+                border-top: 60px solid white;
+                height: 700px;
+                overflow-x: hidden;
+              }
+
+              .askq>td>h3 {
+                margin-top: 20px;
+                margin-bottom: 0px;
+              }
+
+              /*-----------------------------------------------------------------------------*/
+
+              /* Meet our doctors Page 4*/
+
+              .meet-doctor {
+                color: #929292;
+                margin-top: -28px;
+                background-color: #f8f8f8;
+              }
+              .parameet:hover{
+                overflow-y: scroll;
+              }
+
+              .parameet::-webkit-scrollbar{
+                width: 4px;
+              }
+              .parameet::-webkit-scrollbar-track{
+                box-shadow: inset 0 0 2px white;
+              }
+              .parameet::-webkit-scrollbar-thumb{
+                background-color: gray;
+                border-radius: 10px;
+              }
+              .parameet::-webkit-scrollbar-thumb:hover{
+                background-color: #d8dbdd;
+                transition: all 3s !important;
+              }
+              .pagefour {
+                position: fixed;
+                width: 100%;
+                border-bottom: 8px solid #ffffff;
+                border-top: 40px solid #c8ccd0;
+                margin-top: -10px;
+              }
+
+              .bakmeet {
+                float: left;
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 5px;
+                font-weight: 600;
+                color: white;
+              }
+
+              .backmeet {
+                text-align: left;
+                color: white;
+                height: 38px;
+                font-size: 16px;
+                background-color: #c8ccd0;
+                position: relative;
+              }
+
+              .meetdoctor {
+                text-align: right;
+                position: relative;
+                color: #c8ccd0;
+                height: 38px;
+                background-color: white;
+              }
+
+              .meetdoc {
+                float: right;
+                margin-top: 14px;
+                margin-right: 0px;
+                font-size: 16px;
+                color: #f35e60;
+                font-weight: 600 !important;
+              }
+
+              .meetdoctor::before {
+                background: #c8ccd0 none repeat scroll 0 0;
+                content: "";
+                width: 50px;
+                height: 38px;
+                transform: skew(-18deg);
+                left: -10px;
+                position: absolute;
+                border-radius: 2px;
+              }
+
+              .parameet {
+                margin-left: 18px;
+                margin-top: 38px;
+                padding-bottom: 400px;
+                height: 700px;
+                overflow: scroll;
+                overflow-x: hidden;
+              }
+
+              .board {
+                font-weight: 600 !important;
+                font-size: 22px;
+                padding-top: 85px;
+                padding-left: 14px;
+                padding-bottom: 20px;
+              }
+              .container{
+                padding-left: 0px;
+                padding-right: 0px;
+              }
+              .paraboard {
+                padding-right: 71px;
+                padding-left: 16px;
+                margin-top: -8px;
+                font-size: 16px;
+                margin-bottom: 35px;
+                letter-spacing: -0.5px;
+              }
+
+              .load {
+                font-size: 29px;
+                margin-left: 167px;
+              }
+
+              .dasheds {
+                color: #f35e60;
+              }
+
+body {
+  background: white;
+  color: #c8ccd0;
+  text-align: center;
+  font-family: Arial, Helvetica;
+}
+
+.big {
+  font-size: 1.2em;
+  width: 330px;
+
+}
+
+.square {
+  width: .9em;
+  height: .9em;
+  margin: .9em;
+  display: inline-block;
+}
+
+/* Custom dropdown */
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 20px; /* demo only */
+}
+
+.custom-dropdown select {
+  background-color: lightblue;
+  color: gray;
+  font-size: inherit;
+  padding: .5em;
+  padding-right: 210px;	
+  border: 60px;
+  margin: 0px;
+  border-radius: 5px;
+  text-indent: 0.01px;
+  text-overflow: '';
+  -webkit-appearance: button; /* hide default arrow in chrome OSX */
+}
+
+.custom-dropdown::before,
+.custom-dropdown::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.custom-dropdown::after { /*  Custom dropdown arrow */
+  content: "\25BC";
+  height: 1em;
+  font-size: .600em;
+  line-height: 1;
+  right: 1.2em;
+  top: 50%;
+  margin-top: -.5em;
+}
+
+.custom-dropdown::before { /*  Custom dropdown arrow cover */
+  width: 2em;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.custom-dropdown select[disabled] {
+  color: gray;
+}
+
+.custom-dropdown select[disabled]::after {
+  color: gray;
+}
+
+.custom-dropdown::before {
+  background-color: lightgray;
+}
+
+.custom-dropdown::after {
+  color: white;
+}
+
+
+              .rows {
+                padding: 20px;
+              }
+
+              .boared-cer {
+                margin-top: 5px;
+                padding: 70px;
+              }
+
+              .boared-spl {
+                margin-top: 5px;
+                margin-bottom: 0px;
+                margin-left: -15px;
+                padding: 70px;
+              }
+
+              .img-doctor {
+                height: 100px;
+                border-radius: 50%;
+                width: 100px;
+                margin-left: -25px;
+                margin-right: -13px;
+                padding: 5px;
+              }
+
+              .doc-img {
+                color: #a0a0a0;
+                padding-top: 71px !important;
+                font-size: 20px;
+              }
+
+              .doctors-imgs {
+                padding: 10px;
+                margin: 10px;
+                align-items: center;
+              }
+
+              .search-board {
+                border-top: 1px dashed #dddddd;
+                border-bottom: 1px dashed #dddddd !important;
+                padding-left: 22px !important;
+
+              }
+
+              .search-icon {
+                border-top: 1px dashed #dddddd;
+                border-bottom: 1px dashed #dddddd !important;
+                padding: 15px !important;
+              }
+
+              /*-----------------------------------------------------------------------------*/
+
+              /* Support Page 5*/
+
+              .faq {
+                color: #929292;
+                line-height: 20px;
+                font-size: 1.2em;
+                background-color: #f8f8f8;
+                margin-top: -20px;
+              }
+
+              .pagefive {
+                position: fixed;
+                width: 100%;
+                border-bottom: 8px solid #ffffff;
+                border-top: 40px solid #c8ccd0;
+              }
+
+              .bacfaq {
+                float: left;
+                position: absolute;
+                bottom: 0;
+                margin-left: 4px;
+                margin-bottom: 5px;
+                font-weight: 600;
+                color: white;
+              }
+
+              .backfaq {
+                text-align: left;
+                color: white;
+                height: 38px;
+                background-color: #c8ccd0;
+                position: relative;
+              }
+
+              .support {
+                text-align: right;
+                position: relative;
+                color: #c8ccd0;
+                height: 38px;
+                background-color: white;
+              }
+
+              .suppor {
+                float: right;
+                margin-top: 13px;
+                padding-right: 15px;
+                color: #f35e60;
+                font-weight: 550 !important;
+              }
+              
+
+              .support::before {
+                background: #c8ccd0 none repeat scroll 0 0;
+                content: "";
+                width: 50px;
+                height: 38px;
+                transform: skew(-18deg);
+                left: -10px;
+                position: absolute;
+                border-radius: 3px;
+              }
+
+              .faqpara>h3{
+
+                padding-top: 110px;
+                padding-left: 35px;
+                padding-bottom: 30px;
+                font-size: 24px;
+                font-weight: 600 !important;
+              }
+
+              .faqpara>p {
+                margin: 0px 34px 0px;
+                padding: 0px;
+                margin-top: -28px;
+              }
+
+              .ask {
+                border: 1px dashed #f35e60;
+                height: 55px;
+                width: 340px;
+                color: white;
+                background-color: #f35e60;
+                font-weight: 600 !important;
+                margin-bottom: 50px;
+                margin-left: 34px;
+                border-radius: 5px;
+                font-size: 18px;
+              }
+            
+              .askq>td>h3 {
+                padding: 14px;
+                font-size: 22px;
+                font-weight: 600;
+              }
+
+              .dashedask {
+                color: #f35e60;
+                font-size: 9px;
+              }
+
+              .type-your {
+                margin: 4px 6px 0px;
+                font-size: 13px;
+                font-style: italic;
+                color: #cacac9;
+              }
+
+              .askfaq {
+                margin-left: 28px;
+                width: 90%;
+                margin-right: 20px;
+                height: 700px;
+                overflow: scroll;
+                overflow-x: hidden;
+              }
+
+              /*-----------------------------------------------------------------------------*/

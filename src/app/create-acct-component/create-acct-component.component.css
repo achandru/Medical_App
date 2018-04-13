@@ -1,0 +1,183 @@
+.form-group {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px dashed;
+  border-bottom-color: #c6c5c5;
+  background-color: #f8f8f8;
+  margin-top: 20px;
+  padding-left: none;
+  width: 280px;
+}
+
+.forgot {
+  color: #c5c5c4;
+  margin-top: 40px;
+  line-height: 50px;
+  text-decoration: underline;
+  padding-left: 2px;
+}
+
+.create {
+  color: #f36769;
+  margin-left: 80px;
+  line-height: 75px;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+.form-head {
+  background-color: #f8f8f8;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 100px;
+}
+
+.sign {
+  border: 1px dashed #f35e60;
+  height: 57px;
+  width: 348px;
+  color: white;
+  background-color: #f35e60;
+  font-weight: 600 !important;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 300px;
+  margin-left: 0px;
+}
+
+.sign-in {
+  text-align: left;
+  color: #f35e60;
+  height: 38px;
+  background-color: white;
+  position: relative;
+}
+
+.cancel {
+  text-align: right;
+  position: relative;
+  color: #c8ccd0;
+  height: 38px;
+  background-color: #c8ccd0;
+}
+
+.sig {
+  float: left;
+  position: absolute;
+  bottom: 0;
+  font-weight: 600;
+  color: #f35e60;
+}
+
+.canc {
+  float: right;
+  margin-top: 14px;
+  margin-right: 3px;
+  font-size: 15px;
+  color: white;
+  font-weight: 550 !important;
+}
+
+.cancel::after {
+  background: #c8ccd0 none repeat scroll 0 0;
+  content: "";
+  width: 50px;
+  height: 38px;
+  transform: skew(18deg);
+  left: -10px;
+  position: absolute;
+  border-radius: 3px;
+}
+
+.cancel {
+  text-align: right;
+  position: relative;
+  color: #c8ccd0;
+  height: 38px;
+  background-color: #c8ccd0;
+}
+
+.about-us-login {
+  position: fixed;
+  width: 100%;
+  border-top: 44px solid #c8ccd0;
+  border-bottom: 8px solid #ffffff;
+}
+
+/* The container */
+
+.contain {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 13px;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+
+.contain input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+
+.checkmark {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  border-color: gray;
+  border-radius: 4px;
+}
+
+/* When the checkbox is checked, add a blue background */
+
+.contain input:checked~.checkmark {
+  background-color: white;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+
+.contain input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+
+.contain .checkmark:after {
+  left: 5px;
+  top: 3px;
+  width: 5px;
+  height: 8px;
+  border: solid red;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.allergy-btn {
+  border: 1.8px dashed lightgray;
+  height: 57px;
+  width: 345px;
+  color: #f35e60;
+  background-color: #f8f8f8;
+  font-weight: 600 !important;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 18px;
+}

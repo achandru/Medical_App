@@ -1,0 +1,506 @@
+<!--------------------------------------------------------------------------------
+ -------------------------------- Log-In Page -------------------------------- -->
+<div class="front-page" *ngIf="tab==1">
+
+  <div class="pageone">
+
+    <div class="login col-lg-8 col-md-8 col-xs-8">
+      <a class="log" routerLink="/login">
+        <span class="arr-left">
+          <i class="fas fa-power-off"></i>
+        </span>Log in</a>
+    </div>
+
+    <div class="home col-lg-4 col-md-4 col-xs-4">
+      <a class="hom" routerLink="/home">Home</a>
+    </div>
+
+  </div>
+
+  <div class="background">
+
+    <div class="welcome">
+      <!-- <p>
+        WELCOME TO MEDIRECT!
+      </p> -->
+    </div>
+    <div class="para">
+      <!-- <b>
+        <p>
+          Board-certified doctors 24/7
+          <br> via phone or online video consults.
+        </p>
+      </b> -->
+    </div>
+  </div>
+  <div class="listof">
+    <ul>
+      <li>
+        <span class="arrow">
+          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+        </span>
+        <a (click)="setActive(2)">ABOUT MEDIRECT</a>
+      </li>
+      <li>
+        <span class="arrow">
+          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+        </span>
+        <a (click)="setActive(3)">CONDITIONS TREATED</a>
+
+      </li>
+      <li>
+        <span class="arrow">
+          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+        </span>
+        <a (click)="setActive(4)">MEET OUR DOCTORS</a>
+      </li>
+      <li>
+        <span class="arrow">
+          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+        </span>
+        <a (click)="setActive(5)">SUPPORT</a>
+      </li>
+
+    </ul>
+  </div>
+
+  <button class="book">BOOK A DOCTOR</button>
+  <br>
+
+  <button class="account" routerLink="/create-acct-component">CREATE AN ACCOUNT</button>
+</div>
+
+<!--------------------------------------------------------------------------------
+ -------------------------------- About Us ------------------------------------ -->
+
+ <div class="about-us" *ngIf="tab==2">
+
+  <div class="pagetwo">
+
+    <div class="back col-lg-7 col-md-7 col-xs-7">
+      <a class="bac" (click)="setActive(1)">
+        <span class="arr-left">
+          <i class="fas fa-arrow-left"></i>
+        </span>Back</a>
+    </div>
+
+    <div class="about col-lg-5 col-md-5 col-xs-5">
+      <a class="abou" routerLink="home">About us</a>
+    </div>
+
+  </div>
+
+  <div class="paragraph">
+    <h3 class="mission">Our Mission</h3>
+    <p>
+      Lorem ipsum dolor sit amet,consectetur adipiscing elit.Fusce sit amet elit ante.Mauris is massa rutrum,auctor nulla in,vehicula
+      lectus.Cras risus lacus,tristique nec cursus euismod,blandit quis neque.
+    </p>
+    <p>
+      <br> Vivamus eget metus egestas purus ornare malesuada.Morbe erat urna, sollicitudin sit amet ullamcorper sit amet,bibendum
+      id feils.Praesent id purus sit amet sem dictum vehicula ac at lectus.
+    </p>
+    <p>
+      <br> Vivamus sagittis orci sit amet aliquet hendrerit.Integer laoreet consequet pellentesque.Nulla tincidunt enim eu crusus
+      finibus.Praesent eu mollis massa.Nam placeret rhoncus est et pharetra.
+    </p>
+    <p>
+      <br> Nulla tincidunt enim eu crusus finibus. Praesent eu mollis massa.Nam placert rhoncus est et pharetra.
+      <br>
+    </p>
+    <h3 class="vision">Our Vision</h3>
+    <p>
+      Lorem ipsum dolor sit amet,consectetur adipiscing elit.Fusce sit amet elit ante.Mauris is massa rutrum,auctor nulla in,vehicula
+      lectus.Cras risus lacus,tristique nec cursus euismod,blandit quis neque.
+    </p>
+    <p>
+      <br> Vivamus eget metus egestas purus ornare malesuada.Morbe erat urna, sollicitudin sit amet ullamcorper sit amet,bibendum
+      id feils.Praesent id purus sit amet sem dictum vehicula ac at lectus.
+      <br>
+    </p>
+  </div>
+</div>
+
+<!--------------------------------------------------------------------------------
+ -------------------------------- Conditions treated ------------------------- -->
+
+
+<div class="conditions" *ngIf="tab==3">
+
+  <div class="pagethree">
+
+    <div class="backcont col-lg-5 col-md-5 col-xs-5">
+      <a class="bakcont" (click)="setActive(2)">
+        <span class="arr-left">
+          <i class="fas fa-arrow-left"></i>
+        </span>Back</a>
+    </div>
+
+    <div class="conditionst col-lg-7 col-md-7 col-xs-7">
+      <a class="conditionstr" routerLink="home">Conditions treated</a>
+    </div>
+
+  </div>
+  <div class="whatwetreat">
+
+    <div class="paraone">
+      <h3 class="treat">What we treat?</h3>
+      <p>
+        You may wonder:Can a doctor really treat me without seeing me in person? The answer: Absolutly! The physicians at medirect
+        can treat a host of common illnesses quickely and efficiently through a Video Visit.
+        <br>
+      </p>
+    </div>
+
+    <table class="table table-cont">
+      <thead>
+        <tr class="row">
+          <th class="contionhead">
+            Conditions treated
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr class="row">
+          <td>Cold & Flu</td>
+          <td class="dashed">
+            <i class="fas fa-arrow-right"></i>
+          </td>
+        </tr>
+
+        <tr class="row">
+          <td>Sour Throut</td>
+          <td class="dashed">
+            <i class="fas fa-arrow-right"></i>
+          </td>
+        </tr>
+
+        <tr class="row">
+          <td>UTIs</td>
+          <td class="dashed">
+            <i class="fas fa-arrow-right"></i>
+          </td>
+        </tr>
+
+        <tr class="row">
+          <td>Travel</td>
+          <td class="dashed">
+            <i class="fas fa-arrow-right"></i>
+          </td>
+        </tr>
+
+        <tr class="row">
+          <td>Sports Injuries</td>
+          <td class="dashed">
+            <i class="fas fa-arrow-right"></i>
+          </td>
+        </tr>
+
+        <tr class="row">
+          <td>Skin Issues/Rashes</td>
+          <td class="dashed">
+            <i class="fas fa-arrow-right"></i>
+          </td>
+        </tr>
+
+        <tr class="row">
+          <td>Diarrhea & Vomiting</td>
+          <td class="dashed">
+            <i class="fas fa-arrow-right"></i>
+          </td>
+        </tr>
+
+        <tr class="row">
+          <td>Eye Conditions</td>
+          <td class="dashed">
+            <i class="fas fa-arrow-right"></i>
+          </td>
+        </tr>
+
+        <tr class="row">
+          <td>What we don't treat</td>
+          <td class="dashed">
+            <i class="fas fa-arrow-right"></i>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!--------------------------------------------------------------------------------
+ -------------------------------- Meet our Doctors ---------------------------- -->
+
+<div class="meet-doctor" *ngIf="tab==4">
+
+  <div class="pagefour">
+
+    <div class="backmeet col-lg-6 col-md-6 col-xs-6">
+      <a class="bakmeet" (click)="setActive(1)">
+        <span class="arr-left">
+          <i class="fas fa-arrow-left"></i>
+        </span>Back</a>
+    </div>
+
+    <div class="meetdoctor col-lg-6 col-md-6 col-xs-6">
+      <a class="meetdoc" routerLink="home">Meet our doctors</a>
+    </div>
+
+  </div>
+
+  <div class="parameet">
+    <h3 class="board">Board-Certified specialists</h3>
+    <p class="paraboard">
+      Lorem ipsum dolor sit amet,consectetur adipiscing elit.Fusce sit amet elit ante.Mauris is massa rutrum,auctor nulla in,vehicula
+      lectus.Cras risus lacus,tristique nec cursus euismod,blandit quis neque.
+      <br>
+    </p>
+
+    <table class="table board-spl">
+      <tbody>
+
+        <tr class="row search">
+          <td class="col-md-11 col-xd-11 col-sm-11 search-board">Search</td>
+          <td class="dasheds col-md-1 col-xd-1 col-sm-1 search-icon">
+            <i class="fas fa-search"></i>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <div class="container">
+      <form>
+        <span class="custom-dropdown big">
+          <select>    
+              <option>All Doctors    </option>
+          </select>
+      </span>
+      </form>
+
+    </div>
+
+    <div class="doctors-imgs">
+      <table class="table boared-cer">
+        <tbody>
+
+          <tr class="row board-spl">
+
+            <td class="col-md-4 col-xd-4 col-sm-4">
+              <img class="img-doctor" src="assets/matthews.jpeg" alt="doctor">
+            </td>
+
+            <td class="col-md-5 col-xd-5 col-sm-5 doc-name">
+              <h4>Matthew P.Abdel</h4>
+              <h6>Physician with</h6>
+              <h6>9 years of practice</h6>
+            </td>
+
+            <td class="doc-img col-md-3 col-xd-3 col-sm-3">
+              <i class="far fa-arrow-alt-circle-right"></i>
+            </td>
+
+          </tr>
+
+          <tr class="row board-spl">
+
+            <td class="col-md-4 col-xd-4 col-sm-4">
+              <img class="img-doctor" src="assets/ann.jpg" alt="doctor">
+            </td>
+
+            <td class="col-md-5 col-xd-5 col-sm-5 doc-name">
+              <h4>Ann Corbet</h4>
+              <h6>Physician with</h6>
+              <h6>7 years of practice</h6>
+            </td>
+
+            <td class="doc-img col-md-3 col-xd-3 col-sm-3">
+              <i class="far fa-arrow-alt-circle-right"></i>
+            </td>
+
+          </tr>
+
+          <tr class="row board-spl">
+
+            <td class="col-md-4 col-xd-4 col-sm-4">
+              <img class="img-doctor" src="assets/john.jpg" alt="doctor">
+            </td>
+
+            <td class="col-md-5 col-xd-5 col-sm-5 doc-name">
+              <h4>John Roberts</h4>
+              <h6>Physician with</h6>
+              <h6>7 years of practice</h6>
+            </td>
+
+            <td class="doc-img col-md-3 col-xd-3 col-sm-3">
+              <i class="far fa-arrow-alt-circle-right"></i>
+            </td>
+
+          </tr>
+
+          <tr class="row board-spl">
+
+            <td class="col-md-4 col-xd-4 col-sm-4">
+              <img class="img-doctor" src="assets/kevin.jpg" alt="doctor">
+            </td>
+
+            <td class="col-md-5 col-xd-5 col-sm-5 doc-name">
+              <h4>Kevin Ford</h4>
+              <h6>Physician with</h6>
+              <h6>8 years of practice</h6>
+            </td>
+
+            <td class="doc-img col-md-3 col-xd-3 col-sm-3">
+              <i class="far fa-arrow-alt-circle-right"></i>
+            </td>
+
+          </tr>
+
+          <tr class="row board-spl">
+
+            <td class="col-md-4 col-xd-4 col-sm-4">
+              <img class="img-doctor" src="assets/tim.jpg" alt="doctor">
+            </td>
+
+            <td class="col-md-5 col-xd-5 col-sm-5 doc-name">
+              <h4>Tim Brooks</h4>
+              <h6>Physician with</h6>
+              <h6>7 years of practice</h6>
+            </td>
+
+            <td class="doc-img col-md-3 col-xd-3 col-sm-3">
+              <i class="far fa-arrow-alt-circle-right"></i>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+
+
+    </div>
+
+    <div>
+      <span class="load">
+        <i class="fa fa-spinner fa-spin"></i>
+      </span>
+    </div>
+
+  </div>
+</div>
+
+<!--------------------------------------------------------------------------------
+ -------------------------------- Faq ----------------------------------------- -->
+
+<div class="faq" *ngIf="tab==5">
+
+  <div class="pagefive">
+
+    <div class="backfaq col-lg-7 col-md-7 col-xs-7">
+      <a class="bacfaq" (click)="setActive(1)">
+        <span class="arr-left">
+          <i class="fas fa-arrow-left"></i>
+        </span>Back</a>
+    </div>
+
+    <div class="support col-lg-5 col-md-5 col-xs-5">
+      <a class="suppor" routerLink="home">Support</a>
+    </div>
+
+  </div>
+
+  <div class="faqpara">
+    <h3>FAQ</h3>
+  </div>
+
+  <table class="table askfaq">
+    <tbody>
+      <tr class="rows">
+        <td>Nulla disnissim ligula et leo lacinia efficitur.Donec scelerisque posuere mauris,eget pellentesque erewt tempor facilisis.Mauris
+          vel mollis nulla.
+          <td class="dashedask">
+          </td>
+      </tr>
+
+      <tr class="rows">
+        <td>Donec scelerisque posuee mauris,eget pellentesque eret tempor</td>
+        <td class="dashedask">
+          <i class="fas fa-arrow-right"></i>
+        </td>
+      </tr>
+
+      <tr class="rows">
+        <td>Mauris vel mollis nulla.sed sollicitudin condimentum nisl nec</td>
+        <td class="dashedask">
+          <i class="fas fa-arrow-right"></i>
+        </td>
+      </tr>
+
+      <tr class="rows">
+        <td>Etiam a vestibulum lacusc</td>
+        <td class="dashedask">
+          <i class="fas fa-arrow-right"></i>
+        </td>
+      </tr>
+
+      <tr class="rows">
+        <td>Phasellus condimentum dui et pretium vestibulum.Aliquam eret voltpat.Vivamu scelerisque fringilla dignissm.Vivamus
+          ac justo sem</td>
+        <td class="dashedask">
+          <i class="fas fa-arrow-right"></i>
+        </td>
+      </tr>
+
+      <tr class="rows">
+        <td>Donec scelerisque posuere mauris,pellentesque erat tempor facilisis</td>
+        <td class="dashedask">
+          <i class="fas fa-arrow-right"></i>
+        </td>
+      </tr>
+
+      <tr class="rows">
+        <td>Mauris vel mollis nulla.Sollicitudin</td>
+        <td class="dashedask">
+          <i class="fas fa-arrow-right"></i>
+        </td>
+        <br>
+        <br>
+      </tr>
+      <div class="askq">
+        <td>
+          <h3>Ask a question</h3>
+        </td>
+      </div>
+
+      <tr class="rows">
+        <td>
+          <p class="type-your">type your question here</p>
+          <br>
+          <br>
+          <br>
+        </td>
+      </tr>
+
+      <tr class="rows">
+        <td>
+          <p class="type-your">your name</p>
+        </td>
+      </tr>
+
+      <tr class="rows">
+        <td>
+          <p class="type-your">your email</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div>
+    <button class="ask">ASK</button>
+  </div>
+
+</div>
+
+<!--------------------------------------------------------------------------------
+ -------------------------------- Thank You -------------------------------- -->

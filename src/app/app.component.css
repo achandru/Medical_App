@@ -1,0 +1,35 @@
+.ls {
+  text-align: left;
+}
+
+.circle {
+  color: white;
+  margin: 0 !important;
+}
+.container-fluid{
+  padding: 0;
+}
+
+.panel-body {
+  border-radius: 109px;
+  height: 300px;
+  width: 100%;
+}
+
+.panel-default {
+  border-color: black;
+  border: 3px solid;
+  background-color: #f8f8f8;
+}
+
+.fas fa-power-off {
+  position: absolute;
+}
+
+.col-log {
+  position: relative;
+}
+
+.col-hom {
+  position: absolute;
+}
