@@ -7,14 +7,12 @@ import { Component } from '@angular/core';
 })
 export class CreateAcctComponentComponent {
 
-
-  
   tab = 1;
   checkActive(value) {
-      return value == this.tab ? "active" : ""
+    return value = this.tab ? 'active' : '';
   }
   setActive(value) {
-      this.tab = value
+    this.tab = value;
   }
 
 }

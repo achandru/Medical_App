@@ -5,22 +5,33 @@
   border-bottom: 1px dashed;
   border-bottom-color: #c6c5c5;
   background-color: #f8f8f8;
-  margin-top: 20px;
+  margin-top: 24px;
   padding-left: none;
   width: 280px;
 }
 
+.form-group-gender {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  background-color: #f8f8f8;
+  float: left;
+  width: 70px;
+  padding-top: 12px;
+}
+
 .forgot {
   color: #c5c5c4;
-  margin-top: 40px;
-  line-height: 50px;
-  text-decoration: underline;
-  padding-left: 2px;
+  margin-top: 15px;
+  line-height: 15px;
+  text-decoration: none;
+  padding-left: 3px;
 }
 
 .create {
   color: #f36769;
-  margin-left: 80px;
+  margin-left: 90px;
   line-height: 75px;
   font-size: 15px;
   text-decoration: underline;
@@ -28,8 +39,8 @@
 
 .form-head {
   background-color: #f8f8f8;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
   padding-top: 100px;
 }
 
@@ -103,72 +114,68 @@
   width: 100%;
   border-top: 44px solid #c8ccd0;
   border-bottom: 8px solid #ffffff;
+  z-index: 999;
 }
 
-/* The container */
 
-.contain {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  cursor: pointer;
-  font-size: 13px;
-  user-select: none;
+/*------------------------------------------Check Box-------------------------------*/
+
+input[type="checkbox"]:checked + label {
+    color: #f35e60;
+}
+input[type="checkbox"]:checked + label::after {
+   content: '';
+   position: absolute;
+   width: 1.1ex;
+   height: 0.8ex;
+   background: rgba(0, 0, 0, 0);
+   top: 4px;
+   left: 4px;
+   border: 2px solid #f35e60;
+   border-top: none;
+   border-right: none;
+   -webkit-transform: rotate(-45deg);
+   -moz-transform: rotate(-45deg);
+   -o-transform: rotate(-45deg);
+   -ms-transform: rotate(-45deg);
+   transform: rotate(-45deg);
 }
 
-/* Hide the browser's default checkbox */
-
-.contain input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
+input[type="checkbox"] {
+   line-height: 2.1ex;
 }
 
-/* Create a custom checkbox */
-
-.checkmark {
-  position: absolute;
-  top: 17px;
-  left: 0;
-  height: 15px;
-  width: 15px;
-  border-color: gray;
-  border-radius: 4px;
+input[type="radio"],
+input[type="checkbox"] {
+    position: absolute;
+    left: -999em;
 }
 
-/* When the checkbox is checked, add a blue background */
-
-.contain input:checked~.checkmark {
-  background-color: white;
+input[type="checkbox"] + label {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
-
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
+input[type="checkbox"] + label::before {
+   content: "";
+   display: inline-block;
+   vertical-align: -25%;
+   height: 2ex;
+   width: 2ex;
+   background-color: white;
+   border: 1.5px solid rgb(166, 166, 166);
+   border-radius: 4px;
+   margin-right: 0.5em;
+}
+.chk-box{
+  font-size: 16px;
 }
 
-/* Show the checkmark when checked */
-
-.contain input:checked~.checkmark:after {
-  display: block;
+.para-chk{
+  color: #c5c5c4;
 }
-
-/* Style the checkmark/indicator */
-
-.contain .checkmark:after {
-  left: 5px;
-  top: 3px;
-  width: 5px;
-  height: 8px;
-  border: solid red;
-  border-width: 0 2px 2px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
+/*--------------------------------------------------------------------------------*/
 
 .allergy-btn {
   border: 1.8px dashed lightgray;
@@ -180,4 +187,161 @@
   margin-bottom: 20px;
   border-radius: 5px;
   font-size: 18px;
+}
+
+.i-accept {
+  color: #b3b3b2;
+}
+
+.terms {
+  text-decoration: underline;
+  color: #f35e60;
+}
+
+.rcorners2 {
+  border-radius: 50%;
+  border: 1.5px dashed lightgray;
+  padding-bottom: 14px;
+  padding-top: 14px;
+  padding-left: 14px;
+  margin-top: 28px;
+  margin-left: -34px;
+  margin-right: -20px;
+}
+
+.upload-photo {
+  padding: 20px;
+}
+
+.para-acct {
+  text-align: center;
+}
+
+/* ------------------------------Radio Button-------------------------------------- */
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+[type="radio"]:checked+label,
+[type="radio"]:not(:checked)+label {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 25px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #c2c2c2;
+  float: left;
+}
+
+[type="radio"]:checked+label {
+  color: #f35e5f;
+  ;
+}
+
+[type="radio"]:checked+label:before,
+[type="radio"]:not(:checked)+label:before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 0px;
+  border: 2.4px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+  padding-right: 0px;
+  padding-left: 16px;
+  padding-top: 16px;
+}
+
+[type="radio"]:checked+label:after,
+[type="radio"]:not(:checked)+label:after {
+  content: '';
+  width: 18px;
+  height: 18px;
+  background: #f35e5f;
+  position: absolute;
+  top: 1px;
+  left: 3px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked)+label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+[type="radio"]:checked+label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.radios {
+  float: right;
+}
+.test-male{
+  padding: 14px;
+}
+.male{
+padding-right: 20px;
+}
+.female{
+padding-left: 20px;
+}
+/* -------------------------------------------------------------------------------- */
+/*------------------------------------------Check Box Create acc--------------------*/
+
+input[type="checkbox"]:checked + label {
+    color: #f35e60;
+}
+.accept>input[type="checkbox"]:checked + label::after {
+   content: '';
+   position: absolute;
+   width: 1.1ex;
+   height: 0.8ex;
+   background: rgba(0, 0, 0, 0);
+   top: 8px;
+   left: 3px;
+   border: 2px solid #f35e60;
+   border-top: none;
+   border-right: none;
+   -webkit-transform: rotate(-45deg);
+   -moz-transform: rotate(-45deg);
+   -o-transform: rotate(-45deg);
+   -ms-transform: rotate(-45deg);
+   transform: rotate(-45deg);
+}
+
+input[type="checkbox"] {
+   line-height: 2.1ex;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    position: absolute;
+    left: -999em;
+}
+
+input[type="checkbox"] + label {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+   content: "";
+   display: inline-block;
+   vertical-align: -25%;
+   height: 2ex;
+   width: 2ex;
+   background-color: white;
+   border: 1.5px solid rgb(166, 166, 166);
+   border-radius: 4px;
+   margin-right: 0.5em;
 }

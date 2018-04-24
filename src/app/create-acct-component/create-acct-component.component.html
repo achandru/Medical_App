@@ -1,454 +1,501 @@
- <!-- ------------------------------------------------------------------------------
+<!-- ------------------------------------------------------------------------------
  --------------------------------Create an Account------------------------------ -->
-<div class="about-us-login">
+<div *ngIf="tab==1">
+  <div class="about-us-login">
 
     <div class="sign-in col-lg-4 col-md-4 col-xs-4">
-       <a class="sig" (click)="setActive(1)">Create Account</a>
-     </div>
- 
-     <div class="cancel col-lg-8 col-md-8 col-xs-8">
-       <a class="canc" routerLink="/home">
-         <span>
-           Cancel
-           <i class="fas fa-times"></i>
-         </span>
-       </a>
-     </div>
- 
- </div>
- 
- <form class="form-head">
- 
-   <i>
-     <input type="text" class="form-group" placeholder="email*">
-     <br>
-     <input type="text" class="form-group" placeholder="password*">
-     <br>
-     <input type="text" class="form-group" placeholder="confirm password*">
-   </i>
-   <br>
- 
-  <a class="forgot" href=""><label class="contain">I accept Terms and Conditions
-      <input type="checkbox" checked="checked">
-      <span class="checkmark"></span>
-    </label></a>
-   <br>
- 
-   <input type="submit" routerLink="/create-acct-component" value="NEXT" class="sign" />
-   <br>
- 
-   <a class="create" href="">I already have an account</a>
-   <br>
- </form>
+      <a class="sig" (click)="setActive(1)">Create Account</a>
+    </div>
 
- <!--------------------------------------------------------------------------------
+    <div class="cancel col-lg-8 col-md-8 col-xs-8">
+      <a class="canc" routerLink="/home">
+        <span>
+          Cancel
+          <i class="fas fa-times"></i>
+        </span>
+      </a>
+    </div>
+
+  </div>
+
+
+  <form class="form-head">
+
+    <i>
+      <input type="text" class="form-group" placeholder="email*">
+      <br>
+      <input type="text" class="form-group" placeholder="password*">
+      <br>
+      <input type="text" class="form-group" placeholder="confirm password*">
+    </i>
+    <br>
+    <br>
+    <br>
+    <div class="accept">
+      <input type="checkbox" name="genres" checked="checked">
+      <label>
+        <span class="i-accept">I accept</span>
+        <span class="terms">Terms and Conditions</span>
+      </label>
+    </div>
+
+
+    <input type="submit" (click)="setActive(2)" value="NEXT" class="sign" />
+    <br>
+
+    <a class="create" routerLink="/login" href="">I already have an account</a>
+    <br>
+  </form>
+</div>
+
+<!--------------------------------------------------------------------------------
  --------------------------------Your Information------------------------------ -->
- <div class="about-us-login">
+
+<div *ngIf="tab==2">
+  <div class="about-us-login">
 
     <div class="sign-in col-lg-4 col-md-4 col-xs-4">
-       <a class="sig" (click)="setActive(2)">Your Information</a>
-     </div>
- 
-     <div class="cancel col-lg-8 col-md-8 col-xs-8">
-       <a class="canc" routerLink="/home">
-         <span>
-           Cancel
-           <i class="fas fa-times"></i>
-         </span>
-       </a>
-     </div>
- 
- </div>
- 
- <form class="form-head">
- 
-   <i>
-     <input type="text" class="form-group" placeholder="first name*">
-     <br>
-     <input type="text" class="form-group" placeholder="last name*">
-     <br>
-     <input type="text" class="form-group" placeholder="date of birth*">
-     <br>
-     <input type="text" class="form-group" placeholder="Gender*">
-   </i>
-   <br>
- 
- 
-   <input type="submit" value="NEXT" class="sign" />
-   <br>
+      <a class="sig" (click)="setActive(2)">Your Information</a>
+    </div>
 
- </form>
+    <div class="cancel col-lg-8 col-md-8 col-xs-8">
+      <a class="canc">
+        <span>
+          Cancel
+          <i class="fas fa-times"></i>
+        </span>
+      </a>
+    </div>
+
+  </div>
+
+  <form class="form-head">
+    <div class="upload-photo">
+      <i>
+
+        <div class="col-lg-2 col-md-2 col-xs-2">
+          <p class="rcorners2">Upload Photo</p>
+        </div>
+
+        <div class="col-lg-8 col-md-8 col-xs-8">
+          <input type="text" class="form-group" placeholder="first name*">
+          <br>
+          <input type="text" class="form-group" placeholder="last name*">
+          <br>
+        </div>
+      </i>
+      <div class="col-lg-12 col-md-12 col-xs-12">
+
+        <form action="#" class="radios">
+          <input type="text" class="form-group" placeholder="date of birth*">
+          <br>
+          <input class="form-group-gender" placeholder="Gender*">
+
+          <div class="test-male">
+            <div>
+              <input type="radio" id="test1" name="radio-group" class="male" >
+              <label for="test1">Male</label>
+            </div>
+            <div>
+              <input type="radio" id="test2" name="radio-group" checked class="female">
+              <label for="test2">Female</label>
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+    <input type="submit" (click)="setActive(3)" value="NEXT" class="sign" />
+    <br>
+
+  </form>
+</div>
 
 <!--------------------------------------------------------------------------------
  --------------------------------Your Contacts -------------------------------- -->
-
- <div class="about-us-login">
+<div *ngIf="tab==3">
+  <div class="about-us-login">
 
     <div class="sign-in col-lg-4 col-md-4 col-xs-4">
-       <a class="sig" (click)="setActive(3)">Your Contacts</a>
-     </div>
- 
-     <div class="cancel col-lg-8 col-md-8 col-xs-8">
-       <a class="canc" routerLink="/home">
-         <span>
-           Cancel
-           <i class="fas fa-times"></i>
-         </span>
-       </a>
-     </div>
- 
- </div>
- 
- <form class="form-head">
- 
-   <i>
-     <input type="text" class="form-group" placeholder="Phone number*">
-     <br>
-     <input type="text" class="form-group" placeholder="Address line2">
-     <br>
-     <input type="text" class="form-group" placeholder="City/Town">
-     <br>
-     <input type="text" class="form-group" placeholder="Zip code">
-   </i>
-   <br>
- 
- 
-   <input type="submit" value="NEXT" class="sign" />
-   <br>
+      <a class="sig" (click)="setActive(3)">Your Contacts</a>
+    </div>
 
- </form>
+    <div class="cancel col-lg-8 col-md-8 col-xs-8">
+      <a class="canc">
+        <span>
+          Cancel
+          <i class="fas fa-times"></i>
+        </span>
+      </a>
+    </div>
+
+  </div>
+
+  <form class="form-head">
+
+    <i>
+      <input type="text" class="form-group" placeholder="Phone number*">
+      <br>
+      <input type="text" class="form-group" placeholder="Address line2">
+      <br>
+      <input type="text" class="form-group" placeholder="City/Town">
+      <br>
+      <input type="text" class="form-group" placeholder="Zip code">
+    </i>
+    <br>
+
+
+    <input type="submit" (click)="setActive(4)" value="NEXT" class="sign" />
+    <br>
+
+  </form>
+</div>
 <!--------------------------------------------------------------------------------
  -------------------------------- Credit Card ---------------------------------- -->
-
- <div class="about-us-login">
+<div *ngIf="tab==4">
+  <div class="about-us-login">
 
     <div class="sign-in col-lg-4 col-md-4 col-xs-4">
-       <a class="sig" (click)="setActive(4)">Your Contacts</a>
-     </div>
- 
-     <div class="cancel col-lg-8 col-md-8 col-xs-8">
-       <a class="canc" routerLink="/home">
-         <span>
-           Cancel
-           <i class="fas fa-times"></i>
-         </span>
-       </a>
-     </div>
- 
- </div>
- 
- <form class="form-head">
- 
-   <i>
-     <input type="text" class="form-group" placeholder="Card number*">
-     <br>
-     <input type="text" class="form-group" placeholder="Cardholder name*">
-     <br>
-     <input type="text" class="form-group" placeholder="Expiration date*">
-     <br>
-     <p class="form-group">
-       Last 3 digits on the reverse side<br>
-       of your card
-     </p>
-     <input type="text" class="form-group" placeholder="CVV*">
-   </i>
-   <br>
- 
- 
-   <input type="submit" value="NEXT" class="sign" />
-   <br>
+      <a class="sig" (click)="setActive(4)">Credit Card</a>
+    </div>
 
- </form>
+    <div class="cancel col-lg-8 col-md-8 col-xs-8">
+      <a class="canc">
+        <span>
+          Cancel
+          <i class="fas fa-times"></i>
+        </span>
+      </a>
+    </div>
+
+  </div>
+
+  <form class="form-head">
+
+    <i>
+      <input type="text" class="form-group" placeholder="Card number*">
+      <br>
+      <input type="text" class="form-group" placeholder="Cardholder name*">
+      <br>
+      <input type="text"  class="form-group" placeholder="Expiration date*">
+      <br>
+      <br>
+      <div>
+        Last 3 digits on the reverse side
+        <br> of your card
+      </div>
+      <input type="text" class="form-group" placeholder="CVV*">
+    </i>
+    <br>
+
+
+    <input type="submit" (click)="setActive(5)" value="NEXT" class="sign" />
+    <br>
+
+  </form>
+</div>
 <!--------------------------------------------------------------------------------
  -------------------------------- Thank You ------------------------------------ -->
- <div class="about-us-login">
+<div *ngIf="tab==5">
+  <div class="about-us-login">
 
     <div class="sign-in col-lg-4 col-md-4 col-xs-4">
-       <a class="sig" (click)="setActive(5)">Thank you!</a>
-     </div>
- 
-     <div class="cancel col-lg-8 col-md-8 col-xs-8">
-       <a class="canc" routerLink="/home">
-   
-       </a>
-     </div>
- 
- </div>
- 
- <form class="form-head">
+      <a class="sig" (click)="setActive(5)">Thank you!</a>
+    </div>
 
-     <p>
-        <b>Your account has been created.</b><br>
-       Now,please fill in your medical profile.This will
-       help our doctors get better and faster access to all
-       the nessesary information.
-     </p>
+    <div class="cancel col-lg-8 col-md-8 col-xs-8">
+      <a class="canc">
 
-   <br>
- 
- 
-   <input type="submit" value="START" class="sign" />
-   <br>
+      </a>
+    </div>
 
- </form>
- <!--------------------------------------------------------------------------------
+  </div>
+
+  <form class="form-head">
+
+    <p class="para-acct">
+      <b>Your account has been created.</b>
+      <br>
+      <br> Now,please fill in your medical profile.This will help our doctors get better and faster access to all the nessesary
+      information.
+    </p>
+
+    <br>
+
+
+    <input type="submit" (click)="setActive(6)" value="START" class="sign" />
+    <br>
+
+  </form>
+</div>
+<!--------------------------------------------------------------------------------
  -------------------------------- Medical Conditions --------------------------- -->
- <div class="about-us-login">
+<div *ngIf="tab==6">
+  <div class="about-us-login">
 
-  <div class="sign-in col-lg-4 col-md-4 col-xs-4">
-     <a class="sig" (click)="setActive(6)">Medical Conditions</a>
-   </div>
+    <div class="sign-in col-lg-5 col-md-5 col-xs-5">
+      <a class="sig" (click)="setActive(6)">Medical Conditions</a>
+    </div>
 
-   <div class="cancel col-lg-8 col-md-8 col-xs-8">
-     <a class="canc" routerLink="/home">
-       <span>
-         Skip
-         <i class="fas fa-arrow-right"></i>
-       </span>
-     </a>
-   </div>
+    <div class="cancel col-lg-7 col-md-7 col-xs-7">
+      <a class="canc" (click)="setActive(7)">
+        <span>
+          Skip
+          <i class="fas fa-arrow-right"></i>
+        </span>
+      </a>
+    </div>
 
+  </div>
+
+  <form class="form-head">
+    <div class="forgot">
+      <span class="para-chk">
+        Please, let us know if you have any of these medical conditions.
+      </span>
+
+      <input type="checkbox" name="genres" value="adventure" id="1">
+      <label for="1" class="form-group chk-box">
+        Cancer
+      </label>
+
+      <input type="checkbox" name="genres" value="adventure" id="2" checked="checked">
+      <label for="2" class="form-group chk-box">
+        Diabetes
+      </label>
+
+      <input type="checkbox" name="genres" value="adventure" id="3">
+      <label for="3" class="form-group chk-box">
+        Heart Disease
+      </label>
+
+      <input type="checkbox" name="genres" value="adventure" id="4">
+      <label for="4" class="form-group chk-box">
+        Stroke
+      </label>
+
+      <input type="checkbox" name="genres" value="adventure" id="5">
+      <label for="5" class="form-group chk-box">
+        High Blood Pressure
+      </label>
+
+      <input type="checkbox" name="genres" value="adventure" id="6">
+      <label for="6" class="form-group chk-box">
+        High Cholesteral
+      </label>
+
+      <input type="checkbox" name="genres" value="adventure" id="7">
+      <label for="7" class="form-group chk-box">
+        Astma
+      </label>
+
+    </div>
+
+    <input type="submit" (click)="setActive(7)" value="NEXT" class="sign" />
+    <br>
+
+
+  </form>
 </div>
 
-<form class="form-head">
-<p>
-  Please, let us know if you have any of these medical conditions.
-</p>
-
-<a class="forgot" href=""><label class="contain">Cancer
-    <input type="checkbox" checked="checked">
-    <span class="checkmark"></span>
-  </label></a>
-
-
- <a class="forgot" href=""><label class="contain">Diabetes
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label></a>
-
-
-<a class="forgot" href=""><label class="contain">Heart Disease
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label></a>
-
-
-<a class="forgot" href=""><label class="contain">Stroke
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label></a>
-
-
-<a class="forgot" href=""><label class="contain">High Blood Pressure
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label></a>
-
-
-<a class="forgot" href=""><label class="contain">High Cholesterol
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label></a>
-
-
-<a class="forgot" href=""><label class="contain">Astma
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label></a>
-
-
- <input type="submit" routerLink="/create-acct-component" value="NEXT" class="sign" />
- <br>
-
-
-</form>
-
- 
-  <!--------------------------------------------------------------------------------
+<!--------------------------------------------------------------------------------
  -------------------------------- Symptoms ------------------------------------- -->
- <div class="about-us-login">
 
-  <div class="sign-in col-lg-4 col-md-4 col-xs-4">
-     <a class="sig" (click)="setActive(7)">Symptoms</a>
-   </div>
+<div *ngIf="tab==7">
+  <div class="about-us-login">
 
-   <div class="cancel col-lg-8 col-md-8 col-xs-8">
-     <a class="canc" routerLink="/home">
-       <span>
-         Skip
-         <i class="fas fa-arrow-right"></i>
-       </span>
-     </a>
-   </div>
+    <div class="sign-in col-lg-4 col-md-4 col-xs-4">
+      <a class="sig" (click)="setActive(7)">Symptoms</a>
+    </div>
 
+    <div class="cancel col-lg-8 col-md-8 col-xs-8">
+      <a class="canc" (click)="setActive(8)">
+        <span>
+          Skip
+          <i class="fas fa-arrow-right"></i>
+        </span>
+      </a>
+    </div>
+
+  </div>
+
+  <form class="form-head">
+    <div class="forgot">
+      <span class="para-chk">
+        Please, let us know if you have any of these Symptoms.
+      </span>
+
+      <input type="checkbox" name="genres" value="adventure" id="1">
+      <label for="1" class="form-group chk-box">
+        Fever
+      </label>
+
+      <input type="checkbox" name="genres" value="adventure" id="2" checked="checked">
+      <label for="2" class="form-group chk-box">
+        Weight loss/gain
+      </label>
+
+      <input type="checkbox" name="genres" value="adventure" id="3">
+      <label for="3" class="form-group chk-box">
+        Difficulty sleeping
+      </label>
+
+      <input type="checkbox" name="genres" value="adventure" id="4">
+      <label for="4" class="form-group chk-box">
+        Loss of appetite
+      </label>
+
+      <input type="checkbox" name="genres" value="adventure" id="5">
+      <label for="5" class="form-group chk-box">
+        Mood changes
+      </label>
+
+      <input type="checkbox" name="genres" value="adventure" id="6">
+      <label for="6" class="form-group chk-box">
+        Fatigue/Weakness
+      </label>
+
+      <input type="checkbox" name="genres" value="adventure" id="7">
+      <label for="7" class="form-group chk-box">
+        Foreign travel (past month)
+      </label>
+
+      <input type="submit" (click)="setActive(8)" value="NEXT" class="sign" />
+      <br>
+    </div>
+  </form>
 </div>
-
-<form class="form-head">
-<p>
-  Please, let us know if you have any of these Symptoms.
-</p>
-
-<a class="forgot" href=""><label class="contain">Fever
-    <input type="checkbox" checked="checked">
-    <span class="checkmark"></span>
-  </label></a>
-
-
- <a class="forgot" href=""><label class="contain">Weight loss/gain
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label></a>
-
-
-<a class="forgot" href=""><label class="contain">Difficulty sleeping
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label></a>
-
-
-<a class="forgot" href=""><label class="contain">Loss of appetite
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label></a>
-
-
-<a class="forgot" href=""><label class="contain">Mood changes
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label></a>
-
-
-<a class="forgot" href=""><label class="contain">Fatigue/Weakness
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label></a>
-
-
-<a class="forgot" href=""><label class="contain">Foreign travel (past month)
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label></a>
-
-
- <input type="submit" routerLink="/create-acct-component" value="NEXT" class="sign" />
- <br>
-
-
-</form>
 
 <!--------------------------------------------------------------------------------
  -------------------------------- Allergies ------------------------------------ -->
- <div class="about-us-login">
 
-  <div class="sign-in col-lg-4 col-md-4 col-xs-4">
-     <a class="sig" (click)="setActive(7)">Allergies</a>
-   </div>
+<div *ngIf="tab==8">
+  <div class="about-us-login">
 
-   <div class="cancel col-lg-8 col-md-8 col-xs-8">
-     <a class="canc" routerLink="/home">
-       <span>
-         Skip
-         <i class="fas fa-arrow-right"></i>
-       </span>
-     </a>
-   </div>
+    <div class="sign-in col-lg-4 col-md-4 col-xs-4">
+      <a class="sig" (click)="setActive(8)">Allergies</a>
+    </div>
 
-</div>
+    <div class="cancel col-lg-8 col-md-8 col-xs-8">
+      <a class="canc" (click)="setActive(9)">
+        <span>
+          Skip
+          <i class="fas fa-arrow-right"></i>
+        </span>
+      </a>
+    </div>
 
-<form class="form-head">
-<p>
-  Please, let us know if you have any allergies
-</p>
-
-<b><input type="text" class="form-group" placeholder="Piniciline"><i class="fas fa-times-circle"></i></b>
-  <br>
-  <i>
-  <input type="text" class="form-group" placeholder="Allergy">
-  <br>
-</i>
-<br>
-
-<input type="submit" routerLink="/home" value="ADD ALLERGY" class="allergy-btn" />
-
- <input type="submit" routerLink="/create-acct-component" value="NEXT" class="sign" />
- <br>
-
-
-</form>
-
-<!--------------------------------------------------------------------------------
- -------------------------------- Medications ---------------------------------- -->
- <div class="about-us-login">
-
-  <div class="sign-in col-lg-4 col-md-4 col-xs-4">
-     <a class="sig" (click)="setActive(7)">Medications</a>
-   </div>
-
-   <div class="cancel col-lg-8 col-md-8 col-xs-8">
-     <a class="canc" routerLink="/home">
-       <span>
-         Skip
-         <i class="fas fa-arrow-right"></i>
-       </span>
-     </a>
-   </div>
-
-</div>
-
-<form class="form-head">
-<p>
-  Please, let us know if you have are currently taking any medications and if so,how long?
-</p>
-
-<b><input type="text" class="form-group" placeholder="Augmentine"><i class="fas fa-times-circle"></i></b>
-  <br>
-  <i>
-  <input type="text" class="form-group" placeholder="Medication name">
-  <br>
-</i>
-<br>
-
-<input type="submit" routerLink="/home" value="ADD ANOTHER MEDICATION" class="allergy-btn" />
-
- <input type="submit" routerLink="/create-acct-component" value="NEXT" class="sign" />
- <br>
-
-
-</form>
-
- <!--------------------------------------------------------------------------------
- -------------------------------- Thank You ------------------------------------ -->
- <div class="about-us-login">
-
-  <div class="sign-in col-lg-4 col-md-4 col-xs-4">
-     <a class="sig" (click)="setActive(5)">Thank you!</a>
-   </div>
-
-   <div class="cancel col-lg-8 col-md-8 col-xs-8">
-    <a class="canc" routerLink="/home">
-      <span>
-        Skip
-        <i class="fas fa-arrow-right"></i>
-      </span>
-    </a>
   </div>
 
+  <form class="form-head">
+    <p>
+      Please, let us know if you have any allergies
+    </p>
+
+    <b>
+      <input type="text" class="form-group" placeholder="Piniciline">
+      <i class="fas fa-times-circle"></i>
+    </b>
+    <br>
+    <i>
+      <input type="text" class="form-group" placeholder="Allergy">
+      <br>
+    </i>
+    <br>
+
+    <input type="submit" value="ADD ALLERGY" class="allergy-btn" />
+
+    <input type="submit" (click)="setActive(9)" value="NEXT" class="sign" />
+    <br>
+
+
+  </form>
 </div>
+<!--------------------------------------------------------------------------------
+ -------------------------------- Medications ---------------------------------- -->
+<div *ngIf="tab==9">
+  <div class="about-us-login">
 
-<form class="form-head">
+    <div class="sign-in col-lg-4 col-md-4 col-xs-4">
+      <a class="sig" (click)="setActive(9)">Medications</a>
+    </div>
 
-   <p>
-      <b>Your medical profile has been updated.</b><br>
-      Lorem ipsum dolor sit amet,consectetur adipisicing elit,sed so eiusmod tempor incididunt ut labore et dolore magna aliqua.
-   </p>
+    <div class="cancel col-lg-8 col-md-8 col-xs-8">
+      <a class="canc" (click)="setActive(10)">
+        <span>
+          Skip
+          <i class="fas fa-arrow-right"></i>
+        </span>
+      </a>
+    </div>
 
- <br>
+  </div>
+
+  <form class="form-head">
+    <p>
+      Please, let us know if you have are currently taking any medications and if so,how long?
+    </p>
+
+    <b>
+      <input type="text" class="form-group" placeholder="Augmentine">
+      <i class="fas fa-times-circle"></i>
+    </b>
+    <br>
+    <i>
+      <input type="text" class="form-group" placeholder="Medication name">
+      <br>
+    </i>
+    <br>
+
+    <input type="submit" value="ADD ANOTHER MEDICATION" class="allergy-btn" />
+
+    <input type="submit" (click)="setActive(10)" value="NEXT" class="sign" />
+    <br>
 
 
- <input type="submit" value="OK,GREAT!" class="sign" />
- <br>
+  </form>
+</div>
+<!--------------------------------------------------------------------------------
+ -------------------------------- Thank You ------------------------------------ -->
 
-</form>
+<div *ngIf="tab==10">
+  <div class="about-us-login">
 
- <!--------------------------------------------------------------------------------
+    <div class="sign-in col-lg-4 col-md-4 col-xs-4">
+      <a class="sig" (click)="setActive(10)">Thank you!</a>
+    </div>
+
+    <div class="cancel col-lg-8 col-md-8 col-xs-8">
+      <a class="canc" (click)="setActive(10)">
+        <span>
+          Skip
+          <i class="fas fa-arrow-right"></i>
+        </span>
+      </a>
+    </div>
+
+  </div>
+
+  <form class="form-head">
+
+    <p class="para-acct">
+      <b>Your medical profile has been updated.</b>
+      <br>
+
+      <br> Lorem ipsum dolor sit amet,consectetur adipisicing elit,sed so eiusmod tempor incididunt ut labore et dolore magna
+      aliqua.
+    </p>
+
+    <br>
+
+
+    <input type="submit" routerLink="/signin" value="OK,GREAT!" class="sign" />
+    <br>
+
+  </form>
+</div>
+<!--------------------------------------------------------------------------------
  -------------------------------- ------------ -------------------------------- -->

@@ -1,0 +1,135 @@
+              /* Home Page 1*/
+
+              .front-page {
+                text-align: center;
+                margin-top: -30px;
+                background-color: #f8f8f8;
+              }
+
+              .pageone {
+                position: fixed;
+                width: 100%;
+                border-bottom: 0px solid #ffffff;
+                border-top: 36px solid #c8ccd0;
+              }
+
+              .log {
+                float: left;
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 5px;
+                font-weight: 600;
+                color: white;
+              }
+
+              .login {
+                text-align: left;
+                color: white;
+                height: 38px;
+                background-color: #c8ccd0;
+                position: relative;
+              }
+
+              .home {
+                text-align: right;
+                position: relative;
+                color: #c8ccd0;
+                height: 38px;
+                background-color: white;
+              }
+
+              .hom {
+                float: right;
+                margin-top: 15px;
+                padding-right: 12px;
+                font-size: 16px;
+                color: #a0a0a0;
+                font-weight: 600 !important;
+              }
+
+              .home::before {
+                background: #c8ccd0 none repeat scroll 0 0;
+                content: "";
+                width: 38px;
+                height: 38px;
+                transform: skew(-22deg);
+                left: -10px;
+                position: absolute;
+                border-radius: 2px;
+              }
+
+              .welcome>p {
+                color: #f35e60;
+                font-weight: 550 !important;
+                font-size: 1.4em;
+                border-top: 0px solid white;
+              }
+
+              .para {
+                color: #a0a0a0;
+                font-weight: 500 !important;
+                font-size: 1.1em;
+              }
+
+              .book {
+                border: 1px dashed #f35e60;
+                height: 55px;
+                width: 322px;
+                color: white;
+                background-color: #f35e60;
+                font-weight: 600 !important;
+                margin-bottom: 15px;
+                margin-left: 5px;
+                border-radius: 5px;
+                font-size: 18px;
+              }
+
+              .account {
+                border: 1.8px dashed lightgray;
+                height: 55px;
+                width: 322px;
+                color: #f35e60;
+                background-color: #f8f8f8;
+                font-weight: 600 !important;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                font-size: 18px;
+              }
+
+              .listof {
+                text-align: left;
+                margin-top: 16px;
+                margin-bottom: 16px;
+                margin-left: 4px;
+              }
+
+              .listof>ul {
+                list-style-type: none;
+              }
+
+              .listof>ul>li>a {
+                color: #818181;
+                font-weight: 600 !important;
+                line-height: 35px;
+                margin-top: 30px;
+              }
+
+              .background {
+                background-image: url("/assets/doctor.png");
+                height: 374px;
+                width: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-top: 30px;
+                background-position: center;
+                border-top: 82px solid white;
+              }
+
+              .arrow {
+                color: #f46d70;
+                line-height: 20px;
+                cursor: pointer;
+                padding-right: 5px;
+                margin: 0px;
+                font-size: 15px;
+              }

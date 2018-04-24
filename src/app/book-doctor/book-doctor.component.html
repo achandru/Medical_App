@@ -1,0 +1,292 @@
+<!-- ------------------------------------------------------------------------------
+ ---------------------------------Book a Doctor--------------------------------- -->
+<div *ngIf="tab==1">
+  <div class="about-us-login">
+
+    <div class="sign-in col-lg-8 col-md-8 col-xs-8">
+      <a class="sig" routerLink="/signin" (click)="setActive(1)">
+        <span>
+          <i class="fas fa-arrow-left"></i>Back
+        </span>
+      </a>
+    </div>
+
+    <div class="cancel col-lg-4 col-md-4 col-xs-4">
+      <a class="canc" routerLink="/book-doctor">Book a doctor</a>
+    </div>
+
+  </div>
+
+  <form class="form-head">
+    <div class="books-para">
+      <p>
+        When would you like to have your appointment?
+      </p>
+      <br>
+    </div>
+
+    <form action="#" class="radios">
+
+
+      <p>
+        <input type="radio" id="test1" name="radio-group" class="form-group-gender caps" placeholder="ASAP">
+        <label for="test1">ASAP</label>
+        <br>
+      </p>
+      <br>
+      <span class="para-book">
+        Lorem ipsum dolor sit amet,consectetur adipiscing elit.Vivamus neque,euismod dapibus ante consequat nec.
+      </span>
+      <br>
+
+
+      <p>
+        <input type="radio" id="test2" name="radio-group" class="form-group-gender caps" placeholder="Schedule">
+        <label for="test2">Schedule</label>
+        <br>
+      </p>
+      <br>
+      <span class="para-book">
+        Lorem ipsum dolor sit amet,consectetur adipiscing elit.Vivamus fermentum elementum neque,euismod dapibus ante consequat nec.
+      </span>
+
+    </form>
+
+
+    <input type="submit" (click)="setActive(2)" value="NEXT" class="sign" />
+    <br>
+
+    <a class="create" routerLink="/signin" href="">Stop booking</a>
+    <br>
+  </form>
+</div>
+<!--------------------------------------------------------------------------------
+ -------------------------------- Patient ------------------------------------- -->
+<div *ngIf="tab==2">
+  <div class="about-us-login">
+
+    <div class="sign-in col-lg-8 col-md-8 col-xs-8">
+      <a class="sig" (click)="setActive(2)">
+        <span>
+          <i class="fas fa-arrow-left"></i>Back
+        </span>
+      </a>
+    </div>
+
+    <div class="cancel col-lg-4 col-md-4 col-xs-4">
+      <a class="canc" routerLink="/home">Book a doctor</a>
+    </div>
+
+  </div>
+
+
+  <form class="form-head">
+    <div class="books-para">
+      <p>
+        Who is the patient?
+      </p>
+      <br>
+    </div>
+    <div class="doctors-imgs">
+      <table class="table boared-cer">
+        <tbody>
+
+          <tr class="row board-spl">
+
+            <td class="col-md-4 col-xd-4 col-sm-4 doc-images">
+              <img class="img-doctor" src="assets/smiths.jpg" alt="doctor">
+            </td>
+
+            <td class="col-md-5 col-xd-5 col-sm-5 doc-name">
+              <h4>Bisi Smith</h4>
+            </td>
+
+          </tr>
+
+          <tr class="row board-spl blurr">
+
+            <td class="col-md-4 col-xd-4 col-sm-4 doc-images">
+              <img class="img-doctor" src="assets/campi.jpg" alt="doctor">
+            </td>
+
+            <td class="col-md-5 col-xd-5 col-sm-5 doc-name">
+              <h4>Campi Smith</h4>
+            </td>
+
+          </tr>
+
+          <tr class="row board-spl blurr">
+
+            <td class="col-md-4 col-xd-4 col-sm-4 doc-images">
+              <img class="img-doctor" src="assets/monas.jpeg" alt="doctor">
+            </td>
+
+            <td class="col-md-5 col-xd-5 col-sm-5 doc-name">
+              <h4>Mona Smith</h4>
+            </td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+      <input type="submit" (click)="setActive(3)" value="NEXT" class="nxt-btn" />
+      <br>
+
+      <a class="create" href="">Stop booking</a>
+      <br>
+    </div>
+  </form>
+</div>
+<!--------------------------------------------------------------------------------
+ -------------------------------- Symptoms ------------------------------------- -->
+<div *ngIf="tab==3">
+  <div class="about-us-login">
+
+    <div class="sign-in col-lg-8 col-md-8 col-xs-8">
+      <a class="sig" (click)="setActive(3)">
+        <span>
+          <i class="fas fa-arrow-left"></i>Back
+        </span>
+      </a>
+    </div>
+
+    <div class="cancel col-lg-4 col-md-4 col-xs-4">
+      <a class="canc" routerLink="/home">Book a doctor</a>
+    </div>
+
+  </div>
+
+  <form class="form-head">
+    <div class="books-para forgot">
+      <span class="para-chk">
+        What are the Symptoms?
+      </span>
+    </div>
+
+    <input type="checkbox" name="genres" value="adventure" id="1">
+    <label for="1" class="form-group chk-box">
+      Fever
+    </label>
+
+    <input type="checkbox" name="genres" value="adventure" id="2" checked="checked">
+    <label for="2" class="form-group chk-box">
+      Weight loss/gain
+    </label>
+
+    <input type="checkbox" name="genres" value="adventure" id="3">
+    <label for="3" class="form-group chk-box">
+      Difficulty sleeping
+    </label>
+
+    <input type="checkbox" name="genres" value="adventure" id="4">
+    <label for="4" class="form-group chk-box">
+      Loss of appetite
+    </label>
+
+    <input type="checkbox" name="genres" value="adventure" id="5">
+    <label for="5" class="form-group chk-box">
+      Mood changes
+    </label>
+
+    <input type="checkbox" name="genres" value="adventure" id="6">
+    <label for="6" class="form-group chk-box">
+      Fatigue/Weakness
+    </label>
+
+    <input type="checkbox" name="genres" value="adventure" id="7">
+    <label for="7" class="form-group chk-box">
+      Foreign travel (past month)
+    </label>
+
+
+    <input type="submit" (click)="setActive(4)" value="NEXT" class="sign" />
+    <br>
+    <a class="create" href="">Stop booking</a>
+    <br>
+
+  </form>
+</div>
+<!--------------------------------------------------------------------------------
+ -------------------------------- Checkout ------------------------------------- -->
+<div *ngIf="tab==4">
+  <div class="about-us-login">
+
+    <div class="sign-in col-lg-8 col-md-8 col-xs-8">
+      <a class="sig" (click)="setActive(4)">
+        <span>
+          <i class="fas fa-arrow-left"></i>Back
+        </span>
+      </a>
+    </div>
+
+    <div class="cancel col-lg-4 col-md-4 col-xs-4">
+      <a class="canc" routerLink="/home">Checkout</a>
+    </div>
+
+  </div>
+
+
+  <form class="form-head">
+
+    <input class="form-group" type="text" placeholder="Doctor">
+    <br>
+    <P class="para-book">
+      Any available Physycian
+    </P>
+    <br>
+
+    <a class="forgot" href="">
+      <label class="contain form-group">I'm ok with just a phone call
+        <br>(on video chat)
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      </label>
+    </a>
+
+    <input type="submit" (click)="setActive(5)" value="SEND BOOKING REQUEST" class="sign" />
+    <br>
+    <a class="create" routerLink="/signin" href="">Stop booking</a>
+    <br>
+  </form>
+</div>
+<!-- -----------------------Thank You---------------------------------------------- -->
+<div *ngIf="tab==5">
+  <div class="about-us-login">
+
+    <div class="sign-in col-lg-8 col-md-8 col-xs-8">
+      <a class="sig" (click)="setActive(5)">
+        <span>
+          <i class="fas fa-arrow-left"></i>Back
+        </span>
+      </a>
+    </div>
+
+    <div class="cancel col-lg-4 col-md-4 col-xs-4">
+      <a class="canc" routerLink="/home">Thank you!</a>
+    </div>
+
+  </div>
+
+  <form class="form-head">
+    <p class="para-ac-left para-book">
+      <span class="para-title">
+        Book request sent
+      </span>
+      <br>
+      <br> We will confirm it with the doctor
+      <br>and get back to you as soon as
+      <br>possible.
+      <br>
+      <br>
+      <span class="para-second">
+        In the meanwhile we need you to
+        <br>provide us with more details about
+        <br>the patient's medical state.
+      </span>
+    </p>
+
+    <input type="submit" routerLink="/signin" value="START" class="sign" />
+    <br>
+  </form>
+</div>

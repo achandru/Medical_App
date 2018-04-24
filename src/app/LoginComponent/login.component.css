@@ -45,7 +45,6 @@
         font-size: 18px;
         margin-top: 300px;
         margin-left: 0px;
-
       }
 
       .sign-in {
@@ -70,6 +69,8 @@
         bottom: 0;
         font-weight: 600;
         color: #f35e60;
+        padding-bottom: 4px;
+        padding-left: 10px;
       }
 
       .canc {

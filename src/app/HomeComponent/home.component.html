@@ -13,7 +13,9 @@
 
     <div class="home col-lg-4 col-md-4 col-xs-4">
       <a class="hom" routerLink="/home">Home</a>
+      <div class="patch"></div>
     </div>
+    
 
   </div>
 
@@ -73,7 +75,7 @@
 <!--------------------------------------------------------------------------------
  -------------------------------- About Us ------------------------------------ -->
 
- <div class="about-us" *ngIf="tab==2">
+<div class="about-us" *ngIf="tab==2">
 
   <div class="pagetwo">
 
@@ -258,26 +260,26 @@
       <br>
     </p>
 
-    <table class="table board-spl">
-      <tbody>
+    <div class="row search">
+      <!-- <tr >
+    <td class=" search-board ">Search</td>
+    <td class="dasheds search-icon">
+      <i class="fas fa-search"></i>
+    </td>
+  </tr> -->
 
-        <tr class="row search">
-          <td class="col-md-11 col-xd-11 col-sm-11 search-board">Search</td>
-          <td class="dasheds col-md-1 col-xd-1 col-sm-1 search-icon">
-            <i class="fas fa-search"></i>
-          </td>
-        </tr>
-
-      </tbody>
-    </table>
+      <input type="text" class="search-board" placeholder="Search">
+      <i class="fas fa-search dasheds">
+      </i>
+    </div>
 
     <div class="container">
       <form>
         <span class="custom-dropdown big">
-          <select>    
-              <option>All Doctors    </option>
+          <select>
+            <option>All Doctors </option>
           </select>
-      </span>
+        </span>
       </form>
 
     </div>
@@ -361,7 +363,7 @@
           <tr class="row board-spl">
 
             <td class="col-md-4 col-xd-4 col-sm-4">
-              <img class="img-doctor" src="assets/tim.jpg" alt="doctor">
+              <img class="img-doctor" src="assets/tims.jpg" alt="doctor">
             </td>
 
             <td class="col-md-5 col-xd-5 col-sm-5 doc-name">

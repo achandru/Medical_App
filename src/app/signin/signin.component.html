@@ -1,0 +1,62 @@
+<!--------------------------------------------------------------------------------
+ -------------------------------- Log-In Page-2 -------------------------------- -->
+
+<div class="front-page" *ngIf="tab==1">
+
+  <div class="pageone">
+
+    <div class="login col-lg-8 col-md-8 col-xs-8">
+      <a class="log" routerLink="/signin">
+        <span class="arr-left">
+
+        </span>Hello, Bisi Smith</a>
+    </div>
+
+    <div class="home col-lg-4 col-md-4 col-xs-4">
+      <a class="hom" routerLink="/signin">Home</a>
+    </div>
+
+  </div>
+
+  <div class="background">
+
+    <div class="welcome">
+    </div>
+    <div class="para">
+    </div>
+  </div>
+  <div class="listof">
+    <ul>
+      <li>
+        <span class="arrow">
+          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+        </span>
+        <a (click)="setActive(1)">ABOUT MEDIRECT</a>
+      </li>
+      <li>
+        <span class="arrow">
+          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+        </span>
+        <a (click)="setActive(2)">CONDITIONS TREATED</a>
+
+      </li>
+      <li>
+        <span class="arrow">
+          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+        </span>
+        <a (click)="setActive(3)">MEET OUR DOCTORS</a>
+      </li>
+      <li>
+        <span class="arrow">
+          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+        </span>
+        <a (click)="setActive(4)">SUPPORT</a>
+      </li>
+
+    </ul>
+  </div>
+
+  <button class="book" routerLink="/book-doctor">BOOK A DOCTOR</button>
+  <br>
+
+</div>

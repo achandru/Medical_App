@@ -1,17 +1,17 @@
 <div class="about-us-login">
 
-   <div class="sign-in col-lg-4 col-md-4 col-xs-4">
-      <a class="sig" (click)="setActive(1)">Sign In</a>
-    </div>
+  <div class="sign-in col-lg-4 col-md-4 col-xs-4">
+    <a class="sig" (click)="setActive(1)">Sign In</a>
+  </div>
 
-    <div class="cancel col-lg-8 col-md-8 col-xs-8">
-      <a class="canc" routerLink="/home">
-        <span>
-          Cancel
-          <i class="fas fa-times"></i>
-        </span>
-      </a>
-    </div>
+  <div class="cancel col-lg-8 col-md-8 col-xs-8">
+    <a class="canc" routerLink="/home">
+      <span>
+        Cancel
+        <i class="fas fa-times"></i>
+      </span>
+    </a>
+  </div>
 
 </div>
 
@@ -27,9 +27,9 @@
   <a class="forgot" href="">I forgot my password</a>
   <br>
 
-  <input type="submit" value="SIGN IN" class="sign" />
+  <input type="submit" routerLink="/signin" value="SIGN IN" class="sign" />
   <br>
 
-  <a class="create" href="">I want to create an account</a>
+  <a class="create" routerLink="/create-acct-component" href="">I want to create an account</a>
   <br>
 </form>

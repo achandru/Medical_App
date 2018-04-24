@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './HomeComponent/home.component';
 import { LoginComponent } from './LoginComponent/login.component';
 import { CreateAcctComponentComponent } from './create-acct-component/create-acct-component.component';
+import { BookDoctorComponent } from './book-doctor/book-doctor.component';
+import { SigninComponent } from './signin/signin.component';
 
 
 
@@ -16,6 +18,8 @@ import { CreateAcctComponentComponent } from './create-acct-component/create-acc
     HomeComponent,
     LoginComponent,
     CreateAcctComponentComponent,
+    BookDoctorComponent,
+    SigninComponent,
 
 
   ],
